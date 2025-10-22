@@ -2,7 +2,7 @@
 #include <cstring>
 
 // Constructor
-Gol::Gol(int _idGol, int _nroPartido, int _dniJugador, int _tipoGol, const char* _minuto, bool _eliminado, bool _golHistorico)
+Gol::Gol(int _idGol, int _nroPartido, int _dniJugador, int _tipoGol, const char* _minuto, bool _eliminado)
 {
     idGol = _idGol;
     nroPartido = _nroPartido;
@@ -10,7 +10,6 @@ Gol::Gol(int _idGol, int _nroPartido, int _dniJugador, int _tipoGol, const char*
     tipoGol = _tipoGol;
     strcpy(minuto, _minuto);
     eliminado = _eliminado;
-    golHistorico = _golHistorico;
 }
 
 // Getters y Setters
